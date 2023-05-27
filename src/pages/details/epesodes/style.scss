@@ -1,0 +1,60 @@
+@import '../../../mixins.scss';
+
+.seasons-content {
+  background-color: azure;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-bottom: 50px;
+  color: 'white';
+  background-color: var(--black3);
+
+  .css-1q8hoq4 {
+    background: linear-gradient(180deg, #f87000 0.99%, #da2f68 100%);
+    padding: 0 40px;
+    width: 100% !important;
+  }
+  .css-1aquho2-MuiTabs-indicator {
+    top: 0 !important;
+    background-color: #f87000 !important;
+  }
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    color: white !important;
+  }
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    background-color: #020c1b;
+    color: #da2f68 !important;
+  }
+}
+.episode-tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+}
+.episode-btn {
+  padding: 0 50px;
+  padding: 10px 20px;
+  width: 250px;
+  overflow: hidden;
+  color: #da2f68;
+  box-shadow: 0 0 0.625em var(--pink);
+  background-color: #04152d;
+  display: inline;
+  cursor: pointer;
+  border-radius: 10px;
+  opacity: 0.8;
+  transition: all 0.1s ease-in;
+  &:hover {
+    background-color: #da2f68;
+    color: #04152d;
+    opacity: 1;
+  }
+}
+.active-epi {
+  background-color: #ce1f5a;
+  color: #04152d;
+  opacity: 1;
+}

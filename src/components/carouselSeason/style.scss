@@ -1,0 +1,43 @@
+@import '../../mixins.scss';
+.seasonCarosel {
+  padding: 0 10px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f87000 0.99%, #da2f68 100%);
+  @include md {
+    padding: 0 80px;
+  }
+  .caroselContainer {
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    height: 60px;
+  }
+  .seasonItem {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .activeSeason {
+    background-color: #020c1b;
+    color: #da2f68 !important;
+    position: relative;
+    transition: all 0.2s ease-in;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      height: 2px;
+      width: 120px;
+      background-color: #da2f68;
+    }
+  }
+}
