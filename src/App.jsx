@@ -56,11 +56,11 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/:mediaType/:id" element={<Details />} />
-        <Route path="/search/:query" element={<SearchResult />} />
-        <Route path="/explore/:mediaType" element={<Explore />} />
-        <Route path="/actors/:id" element={<Actors />} />
+        <Route path="movix/" element={<Home />} />
+        <Route path="movix/:mediaType/:id" element={<Details />} />
+        <Route path="movix/search/:query" element={<SearchResult />} />
+        <Route path="movix/explore/:mediaType" element={<Explore />} />
+        <Route path="movix/actors/:id" element={<Actors />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
