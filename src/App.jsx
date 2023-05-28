@@ -34,7 +34,7 @@ function App() {
       dispatch(getApiConfiguration(url));
     });
   };
-
+  console.log('app');
   const genresCall = async () => {
     let promises = [];
     let endPoints = ['tv', 'movie'];
