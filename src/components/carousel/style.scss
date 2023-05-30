@@ -93,6 +93,9 @@
       box-shadow: 0 0 0.5em var(--pink);
       border-radius: 12px;
       cursor: pointer;
+      &:hover {
+        box-shadow: inset 0 0 5rem #ffae06;
+      }
       @include md {
         box-shadow: 0 0 0.625em var(--pink);
         width: calc(25% - 15px);

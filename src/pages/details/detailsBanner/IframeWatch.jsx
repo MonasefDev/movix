@@ -30,11 +30,9 @@ const IframeWatch = ({
           frameBorder="0"
           height={heightWindow}
           src={
-            ''
-
-            /* mediaType === 'movie'
+            mediaType === 'movie'
               ? `https://www.2embed.to/embed/tmdb/movie?id=${id}`
-              : `https://www.2embed.to/embed/tmdb/tv?id=${id}&s=${season}&e=${episode}` */
+              : `https://www.2embed.to/embed/tmdb/tv?id=${id}&s=${season}&e=${episode}`
           }
           allowFullScreen
         />
